@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+    --white: #fff;
+    --black: #1c2b2d;
+    --blue: #31326f;
+    --color-primary: #ffff10;
+    --color-sec: #ff523b;
+    --color-grey: #eee;
+    --color-dark-grey: #222831;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Cabeçalho*/
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    min-height: 5vh;
+    height: 82px;
+    background-color: white;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,'Roboto',Helvetica Neue,Arial,Noto Sans,sans-serif;
+}
+
+
+.logotop {
+    max-width: 225px;
+    padding: 10px;
+}
+
+.nav-links {
+    display: inline-flex;
+    justify-content: center;
+    width: auto;
+    align-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.nav-item {
+    color: #54595f;
+    text-decoration: none;
+    font-weight: initial;
+    font-size: 16px;
+    padding-left: 27px;
+    padding-right: 27px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+   
+}
+
+a.active, a:hover {
+    color: #ffffff;
+    background: #d31a2b;
+    transition: .55s;
+}
+.nav-links .search-icon {
+    height: 40px;
+    width: 240px;
+    padding-left: 10px;
+    display: flex;
+    background: #f2f2f2;
+    border-color: black;
+    border-radius: 5px;
+}
+/*PAG2*/
+
+.container {
+    padding: 40px 10px 0px 40px;
+}
+
+form input {
+    height: 30px;
+    width: 200px;
+    border: 1px solid rgba(54,54,54,0.2);
+    border-radius: 5px 0 0 5px;
+    border-bottom: 2px solid var(--color-sec);
+}
+
+#store-products {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 3rem;
+}
+
+.store-product {
+    align-items: center;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    max-width: 25rem;
+    padding: 30px;
+}
+
+.store-product img{
+    width: 97%;
+}
+
+.product-details {
+    text-align: center;
+    padding-bottom: 1rem;
+    background-color: #eee;
+}
+
+.product-details h4{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.product-details h4, h5{
+    padding-bottom: 5px;
+}
+
+.product-details p{
+    font-size: 1rem;
+    padding-top: 10px;
+    padding-bottom: 1rem;
+    color: green;
+    font-weight: 700;
+}
+
+.product-details p span{
+    text-decoration: line-through;
+    color: red;
+    font-weight: normal;
+}
+
+.product-details a{
+    font-size: 1rem;
+    text-decoration: none;
+    background-color: var(--color-sec);
+    color: #fff;
+    padding: .5rem 1rem;
+    border-radius: 3px;
+}
+
+.product-details a:hover{
+    background-color: var(--color-primary);
+}
+/*FIM PAG2*/
+
+/*Produto*/
+.Container-product {
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.single-product{
+    margin-top: 80px;
+}
+
+
+/*ZOOM IMAGEM*/
+.xzoom-thumbs img{
+    display: inline-block;
+    height: 80px;
+    width: 80px;
+    border: 1px solid #ccc;
+}
+
+ .xzoom-preview {
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 20px 2px rgba(0,0,0,0.2);
+}
+
+
+
+ /*seção do produto*/
+ .col-2{
+     flex-basis: 50%;
+     min-width: 300px;
+ }
+ .col-2 h1{
+     font-size: 50px;
+     line-height:60px;
+     margin: 25px 0 10px 0;
+ }
+.single-product h2{
+    font-size: 12px;
+    opacity: 70%;
+}
+
+.single-product h3 {
+    margin: 30px 0 5px 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+.single-product h5 {
+    opacity: 60%;
+    padding-left: 2px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ .single-product input{
+     width: 50px;
+     height: 40px;
+     padding-left: 10px;
+     font-size: 20px;
+     margin-right: 10px;
+     border: 1px solid #ff523b;
+ }
+ input:focus{
+     outline: none;
+ }
+ a{
+     text-decoration: none;
+     color: #555;
+ }
+ .single-product .fas{
+     color: #ff523b;
+     margin-left: 10px;
+ }
+ p{
+     color:#555;
+ }
+ .bnt{
+     display: inline-block;
+     background:#ff523b;
+     color:#fff;
+     padding: 8px 30px;
+     margin: 25px 0 40px 0;
+     border-radius: 36px;
+     transition: background 0.5s;
+ }
+ .bnt:hover{
+     background: #563434;
+ }
+
+.description p{
+    padding-bottom: 40px;
+}
